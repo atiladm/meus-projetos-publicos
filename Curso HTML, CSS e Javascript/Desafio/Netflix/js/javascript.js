@@ -9,9 +9,9 @@ const esconderTitulo = (id) => {
 }
 
 const deslizarEsquerda = (id, deslocamento) => {
-    if (step < 1200) {
+    if (step < 80) {
         step += deslocamento;
-        document.getElementById(id).style.marginRight = String(step) + 'px';
+        document.getElementById(id).style.marginRight = String(step) + 'vw';
     } else {
         return;
     }
@@ -19,9 +19,9 @@ const deslizarEsquerda = (id, deslocamento) => {
 }
 
 const deslizarDireita = (id, deslocamento) => {
-    if (step > -800) {
+    if (step > -80) {
         step -= deslocamento;
-        document.getElementById(id).style.marginRight = String(step) + 'px';
+        document.getElementById(id).style.marginRight = String(step) + 'vw';
     } else {
         return;
     }
