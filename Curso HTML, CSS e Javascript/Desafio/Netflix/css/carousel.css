@@ -1,0 +1,152 @@
+:root {
+    --cinza: #e5e5e5;
+    --turquesa: #54b9c5;
+    --branco: #ffffff;
+    --preto: #000000;
+}
+
+.carouselContainer {
+    margin: 3vw;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carouselTituloContainer {
+    color: var(--turquesa);
+    line-height: 1.3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.6vw;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-right: 1vw;
+    font-weight: 700;
+    color: var(--cinza);
+    cursor: pointer;
+}
+
+.carouselMaisContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselMais {
+    display: inline-block;
+    font-size: .9vw;
+    margin-right: 4px;
+    transition: max-width 1s, opacity 1s;
+    white-space: nowrap;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.carouselMaisText {
+    display: inline-block;
+    font-size: 1vw;
+    margin-right: 6px;
+    line-height: 0.8vw;
+    font-weight: 600;
+    transition: max-width 1s, opacity 1s, transform 750ms;
+    cursor: pointer;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.carouselCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carouselCard {
+    width: 25%;
+    margin-right: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.carouselCardImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 240px;
+    height: 160px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0.4s;
+    display: flex;
+    color: var(--branco);
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.carouselCardImg:hover {
+    width: 280px;
+    height: 200px;
+}
+
+.carouselLeftArrow {
+    color: var(--branco);
+    font-size: 2vw;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    transition: font-size 0.5s;
+}
+
+.carouselRightArrow {
+    color: var(--branco);
+    font-size: 2vw;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    transition: font-size 0.5s;
+}
+
+.cardImgDetail {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px var(--preto);
+    max-lines: 1;
+    display: none;
+}
+
+.carouselLeftArrow:hover {
+    font-size: 3vw;
+}
+
+.carouselRightArrow:hover {
+    font-size: 3vw;
+}
+
+.carouselCardImg .fa {
+    margin-right: 12px;
+    font-size: 1.6vw;
+}
+
+#cr1 {
+    transition: margin-right 1s;
+    transition-delay: 0.1s;
+}
+
+#car1 {
+    transition: margin-right 1s;
+    transition-delay: 0.1s;
+}
+
+#ear1 {
+    transition: margin-right 1s;
+    transition-delay: 0.1s;
+}
